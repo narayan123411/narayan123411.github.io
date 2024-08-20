@@ -316,12 +316,6 @@ svg {
   max-height: 80px; /* Ensure the image doesn't increase the navbar height */
 }
 
-.navbar {
-  max-height: 80px; /* Adjust based on your design */
-  overflow: hidden; /* Ensures content doesn't overflow the navbar */
-}
-
-
 table {
   caption-side: bottom;
   border-collapse: collapse;
@@ -424,9 +418,12 @@ button:not(:disabled),
   box-sizing: border-box; /* Ensure padding and border are included in width and height */
 }
 
-
-
-
+.responsive-iframe {
+  width: 100%;
+  height: auto;
+  min-height: 300px; /* Set a minimum height for better usability */
+  border: 0;
+}
 
 textarea {
   resize: vertical;
@@ -8034,6 +8031,10 @@ textarea.form-control-lg {
   text-align: center !important;
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
 .text-decoration-none {
   text-decoration: none !important;
 }
@@ -11007,8 +11008,8 @@ html {
 }
 
 .masthead .masthead-avatar {
-  width: 26rem;
-  height: 26rem; /* Added this to make it square */
+  width: 16rem;
+  height: 16rem; /* Added this to make it square */
   object-fit: cover; /* Ensures the image scales to fill the square */
 }
 
@@ -11072,7 +11073,7 @@ html {
   padding: 1rem;
 }
 .portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
+  font-size: 2rem;
   line-height: 2rem;
 }
 @media (min-width: 992px) {
