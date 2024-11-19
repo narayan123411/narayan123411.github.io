@@ -55,104 +55,66 @@
             </div>
         </header>
 
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Categories-->
-                <div class="row g-4">
-                    <!-- Category 1: Data Analyst -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="data-analyst-preview" 
-                                    src="assets/img/portfolio/Power BI_1.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal1"
-                                >
-                                <h5 class="text-secondary">Power BI</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI', '#portfolioModal1', this)" 
-                                    src="assets/img/portfolio/Power BI_1.png" 
-                                    alt="Power BI" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart', '#portfolioModal3', this)" 
-                                    src="assets/img/portfolio/Flowchart.png" 
-                                    alt="Flowchart" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Categories-->
+        <div class="row g-4">
+            <!-- Category 1: Data Analyst -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-analyst-preview" src="assets/img/portfolio/Power BI_1.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <h5 class="text-secondary">Power BI</h5>
                     </div>
-                    <!-- Category 2: Data Scientists -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Data Scientists</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="data-scientist-preview" 
-                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal6"
-                                >
-                                <h5 class="text-secondary">Sentimental Analysis</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" 
-                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
-                                    alt="Sentimental Analysis" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" 
-                                    src="assets/img/portfolio/Covid Spread.png" 
-                                    alt="Covid Spread" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Category 3: Testing -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="testing-preview" 
-                                    src="assets/img/portfolio/Web Scrapping.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal4"
-                                >
-                                <h5 class="text-secondary">Web Scrapping</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scrapping', '#portfolioModal4', this)" 
-                                    src="assets/img/portfolio/Web Scrapping.png" 
-                                    alt="Web Scrapping" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" 
-                                    src="assets/img/portfolio/EmoVibe.png" 
-                                    alt="EmoVibe" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI', '#portfolioModal1', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_2.png', 'Power BI 2', '#portfolioModal7', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI 2" class="img-thumbnail" style="width: 50px;">
                     </div>
                 </div>
             </div>
-        </section>
-        
+            <!-- Category 2: Data Scientist -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Scientist</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-scientist-preview" src="assets/img/portfolio/EmoVibe.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <h5 class="text-secondary">EmoVibe</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" src="assets/img/portfolio/SentimentalAnalysis.png" alt="Sentimental Analysis" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart', '#portfolioModal3', this)" src="assets/img/portfolio/Flowchart.png" alt="Flowchart" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Category 3: Testing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="testing-preview" src="assets/img/portfolio/Web Scrapping.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <h5 class="text-secondary">Web Scraping</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scraping', '#portfolioModal4', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping_2.png', 'Web Scraping 2', '#portfolioModal8', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping 2" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
