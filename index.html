@@ -54,6 +54,7 @@
                 <p class="masthead-subheading font-weight-light mb-0">Data Analyst - Data Scientist - NLP Practitioner -  ML DevOps Engineer - Software Testing Engineer </p>
             </div>
         </header>
+
         <!-- Portfolio Section-->
         <section class="page-section portfolio" id="portfolio">
             <div class="container">
@@ -65,85 +66,89 @@
                     <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                     <div class="divider-custom-line"></div>
                 </div>
-                <!-- Portfolio Carousel-->
-                <div id="portfolioCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <!-- Portfolio Item 1-->
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Power BI_1.png" alt="Power BI">
-                                </div>
+                <!-- Portfolio Categories-->
+                <div class="row g-4">
+                    <!-- Category 1: Data Analyst -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow">
+                            <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <img id="data-analyst-preview" 
+                                    src="assets/img/portfolio/Power BI_1.png" 
+                                    alt="Project Preview" 
+                                    class="img-fluid mb-3 cursor-pointer" 
+                                    style="max-height: 200px; width: auto;"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#portfolioModal1"
+                                >
+                                <h5 class="text-secondary">Power BI</h5>
                             </div>
-                        </div>
-                        <!-- Portfolio Item 2-->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 3-->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Flowchart.png" alt="Flowchart">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 4-->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scrapping">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 5-->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Portfolio Item 6-->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-center">
-                                <div class="portfolio-item mx-2" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
-                                    <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
-                                        <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
-                                    </div>
-                                    <img class="img-fluid" src="assets/img/portfolio/SentimentalAnalysis.png" alt="SentimentalAnalysis.png">
-                                </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI', '#portfolioModal1', this)" 
+                                    src="assets/img/portfolio/Power BI_1.png" 
+                                    alt="Power BI" 
+                                    class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart', '#portfolioModal3', this)" 
+                                    src="assets/img/portfolio/Flowchart.png" 
+                                    alt="Flowchart" 
+                                    class="img-thumbnail" style="width: 50px;">
                             </div>
                         </div>
                     </div>
-                    <!-- Carousel Controls-->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+                    <!-- Category 2: Data Scientists -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow">
+                            <div class="card-header bg-secondary text-white text-uppercase">Data Scientists</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <img id="data-scientist-preview" 
+                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
+                                    alt="Project Preview" 
+                                    class="img-fluid mb-3 cursor-pointer" 
+                                    style="max-height: 200px; width: auto;"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#portfolioModal6"
+                                >
+                                <h5 class="text-secondary">Sentimental Analysis</h5>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" 
+                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
+                                    alt="Sentimental Analysis" 
+                                    class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" 
+                                    src="assets/img/portfolio/Covid Spread.png" 
+                                    alt="Covid Spread" 
+                                    class="img-thumbnail" style="width: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category 3: Testing -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow">
+                            <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <img id="testing-preview" 
+                                    src="assets/img/portfolio/Web Scrapping.png" 
+                                    alt="Project Preview" 
+                                    class="img-fluid mb-3 cursor-pointer" 
+                                    style="max-height: 200px; width: auto;"
+                                    data-bs-toggle="modal"
+                                    data-bs-target="#portfolioModal4"
+                                >
+                                <h5 class="text-secondary">Web Scrapping</h5>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scrapping', '#portfolioModal4', this)" 
+                                    src="assets/img/portfolio/Web Scrapping.png" 
+                                    alt="Web Scrapping" 
+                                    class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" 
+                                    src="assets/img/portfolio/EmoVibe.png" 
+                                    alt="EmoVibe" 
+                                    class="img-thumbnail" style="width: 50px;">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -648,5 +653,19 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            function changeProject(previewId, imageUrl, projectName, portfolioModalId, selectedThumbnail) {
+                const previewImg = document.getElementById(previewId);
+                previewImg.src = imageUrl;
+                previewImg.setAttribute('data-bs-target', portfolioModalId);
+                const cardBody = previewImg.closest('.card-body');
+                cardBody.querySelector('h5').textContent = projectName;
+
+                // Highlight the selected thumbnail and remove highlight from others
+                const thumbnails = selectedThumbnail.closest('.card-footer').querySelectorAll('.img-thumbnail');
+                thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+                selectedThumbnail.classList.add('selected');
+            }
+        </script>
     </body>
 </html>
