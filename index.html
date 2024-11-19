@@ -443,71 +443,34 @@
             </div>
         </div>
         <!-- Portfolio Modal Tableau-->
-        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employee Tracker Dashboard</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Power BI Report -->
-                                    <iframe title="FinalYearVisualization 1" class="responsive-iframe" src="https://public.tableau.com/views/EmployeeTrackerDashboard/EmployeeTracker?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" frameborder="0" allowFullScreen="true"></iframe>
-
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
+       <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employee Tracker Dashboard</h2>
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
                             </div>
+                            <!-- Tableau visualization container -->
+                            <div id='tableauViz'></div>
+                            <p class="mb-4 text-justify">This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EMO VIBE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets\img\288330234-1d3754e9-a171-4921-8458-f7f7b1880828.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">
-                                        This project leverages an advanced Convolutional Neural Network, specifically the ResNet model, to analyze facial expressions and predict emotions with 95% accuracy. Based on the detected emotion, the system suggests music tracks that match the user's mood, updating recommendations each time while also considering the user's previous choices.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    </div>
+</div>
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -662,5 +625,16 @@
                 selectedThumbnail.classList.add('selected');
             }
         </script>
+           <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
+    <script type='text/javascript'>
+        var divElement = document.getElementById('tableauViz');
+        var vizElement = divElement.getElementsByTagName('object')[0];
+        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
+        else { vizElement.style.width='100%';vizElement.style.height='727px';}
+        var scriptElement = document.createElement('script');
+        scriptElement.src = 'https://public.tableau.com/views/EmployeeTrackerDashboard/EmployeeTracker?:embed=y&:display_count=yes&:origin=viz_share_link';
+        vizElement.parentNode.insertBefore(scriptElement, vizElement);
+    </script>
     </body>
 </html>
