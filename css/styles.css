@@ -11093,3 +11093,12 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.portfolio .selected {
+  border: 2px solid #1bbc9d;
+  transform: scale(1.1);
+}
