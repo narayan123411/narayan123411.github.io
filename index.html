@@ -443,10 +443,13 @@
             </div>
         </div>
         <!-- Portfolio Modal Tableau-->
-       <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+       <!-- Portfolio Modal Tableau -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
     <div class="modal-dialog modal-xl">
         <div class="modal-content">
-            <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
             <div class="modal-body text-center pb-5">
                 <div class="container">
                     <div class="row justify-content-center">
@@ -457,12 +460,34 @@
                                 <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
                                 <div class="divider-custom-line"></div>
                             </div>
-                            <!-- Tableau visualization container -->
-                            <div id='tableauViz'></div>
-                            <p class="mb-4 text-justify">This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.</p>
+                            <!-- Tableau Embed Container -->
+                            <div class='tableauPlaceholder' id='viz1732042955574' style='position: relative;'>
+                                <noscript>
+                                    <a href='#'>
+                                        <img alt='Employee Tracker' src='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1_rss.png' style='border: none' />
+                                    </a>
+                                </noscript>
+                                <object class='tableauViz' style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='EmployeeTrackerDashboard/EmployeeTracker' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image' value='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='language' value='en-US' />
+                                </object>
+                            </div>
+                            <p class="mb-4 text-justify">
+                                This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.
+                            </p>
                             <button class="btn btn-primary" data-bs-dismiss="modal">
-                                <i class="fas fa-xmark fa-fw"></i>
-                                Close Window
+                                <i class="fas fa-xmark fa-fw"></i> Close Window
                             </button>
                         </div>
                     </div>
@@ -471,6 +496,7 @@
         </div>
     </div>
 </div>
+
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -625,16 +651,23 @@
                 selectedThumbnail.classList.add('selected');
             }
         </script>
-           <script type='text/javascript' src='https://public.tableau.com/javascripts/api/tableau-2.min.js'></script>
-    <script type='text/javascript'>
-        var divElement = document.getElementById('tableauViz');
-        var vizElement = divElement.getElementsByTagName('object')[0];
-        if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-        else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} 
-        else { vizElement.style.width='100%';vizElement.style.height='727px';}
-        var scriptElement = document.createElement('script');
-        scriptElement.src = 'https://public.tableau.com/views/EmployeeTrackerDashboard/EmployeeTracker?:embed=y&:display_count=yes&:origin=viz_share_link';
-        vizElement.parentNode.insertBefore(scriptElement, vizElement);
-    </script>
+   <script type='text/javascript'>
+    var divElement = document.getElementById('viz1732042955574');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1200px';
+        vizElement.style.height = '827px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '827px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '2177px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
     </body>
 </html>
