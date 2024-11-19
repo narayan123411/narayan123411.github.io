@@ -11093,3 +11093,40 @@ html {
 .copyright {
   background-color: #1a252f;
 }
+
+.portfolio .portfolio-item-caption-content i {
+  color: #ffffff;
+  font-size: 3rem;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.portfolio .portfolio-item-caption:hover .portfolio-item-caption-content i {
+  color: #1bbc9d;
+  transform: scale(1.2);
+  text-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.portfolio .portfolio-item-caption {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.portfolio .portfolio-item-caption:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio .carousel-control-prev-icon,
+.portfolio .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio .carousel-control-prev-icon:hover,
+.portfolio .carousel-control-next-icon:hover {
+  background-color: #1bbc9d;
+  transform: scale(1.1);
+}
