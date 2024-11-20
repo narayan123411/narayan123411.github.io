@@ -55,66 +55,88 @@
             </div>
         </header>
 
-<!-- Portfolio Section-->
-<section class="page-section portfolio" id="portfolio">
-    <div class="container">
-        <!-- Portfolio Section Heading-->
-        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-        <!-- Icon Divider-->
-        <div class="divider-custom">
-            <div class="divider-custom-line"></div>
-            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-            <div class="divider-custom-line"></div>
-        </div>
-        <!-- Portfolio Categories-->
-        <div class="row g-4">
-            <!-- Category 1: Data Analyst -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center shadow hover-effect">
-                    <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img id="data-analyst-preview" src="assets/img/portfolio/Power BI_1.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
-                        <h5 class="text-secondary">Power BI</h5>
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Categories-->
+                <div class="row g-4">
+                    <!-- Category 1: Data Analyst -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow hover-effect">
+                            <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <div class="project-image-container">
+                                    <img id="data-analyst-preview" src="assets/img/portfolio/Power BI_1.png" alt="Project Preview" class="rounded-circle" style="height: 200px; width: 200px; object-fit: cover;">
+                                    <div class="view-icon-overlay" id="viewIconOverlay1" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                                        <div class="dark-overlay"></div>
+                                        <i class="fas fa-eye"></i>
+                                        <p class="mobile-view-text">Tap to View</p>
+                                    </div>
+                                </div>
+                                <h5 class="text-secondary">Power BI</h5>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('data-analyst-preview', 'viewIconOverlay1', 'assets/img/portfolio/Power BI_1.png', 'Power BI Dashboard', '#portfolioModal1', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI" class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('data-analyst-preview', 'viewIconOverlay1', 'Employee Tracker.png', 'Tableau Dashboard', '#portfolioModal7', this)" src="Employee Tracker.png" alt="Power BI 2" class="img-thumbnail" style="width: 50px;">
+                                <img onclick="changeProject('data-analyst-preview', 'viewIconOverlay1', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread" class="img-thumbnail" style="width: 50px;">
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-center gap-2">
-                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI Dashboard', '#portfolioModal1', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI" class="img-thumbnail selected" style="width: 50px;">
-                        <img onclick="changeProject('data-analyst-preview', 'Employee Tracker.png', 'Tableau Dashboard', '#portfolioModal7', this)" src="Employee Tracker.png" alt="Power BI 2" class="img-thumbnail" style="width: 50px;">
-                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread" class="img-thumbnail" style="width: 50px;">
+                    <!-- Category 2: Data Scientist -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow hover-effect">
+                            <div class="card-header bg-secondary text-white text-uppercase">Data Scientist</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <div class="project-image-container">
+                                    <img id="data-scientist-preview" src="assets/img/portfolio/EmoVibe.png" alt="Project Preview" class="rounded-circle" style="height: 200px; width: 200px; object-fit: cover;">
+                                    <div class="view-icon-overlay" id="viewIconOverlay2" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                                        <div class="dark-overlay"></div>
+                                        <i class="fas fa-eye"></i>
+                                        <p class="mobile-view-text">Tap to View</p>
+                                    </div>
+                                </div>
+                                <h5 class="text-secondary">EmoVibe</h5>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('data-scientist-preview', 'viewIconOverlay2', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe" class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('data-scientist-preview', 'viewIconOverlay2', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" src="assets/img/portfolio/SentimentalAnalysis.png" alt="Sentimental Analysis" class="img-thumbnail" style="width: 50px;">
+                                <img onclick="changeProject('data-scientist-preview', 'viewIconOverlay2', 'assets/img/portfolio/Flowchart.png', 'Flowchart Recognition', '#portfolioModal3', this)" src="assets/img/portfolio/Flowchart.png" alt="Flowchart" class="img-thumbnail" style="width: 50px;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Category 3: Testing -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card h-100 text-center shadow hover-effect">
+                            <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
+                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                                <div class="project-image-container">
+                                    <img id="testing-preview" src="assets/img/portfolio/Web Scrapping.png" alt="Project Preview" class="rounded-circle" style="height: 200px; width: 200px; object-fit: cover;" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                    <div class="view-icon-overlay" id="viewIconOverlay3" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                                        <div class="dark-overlay"></div>
+                                        <i class="fas fa-eye"></i>
+                                        <p class="mobile-view-text">Tap to View</p>
+                                    </div>
+                                </div>
+                                <h5 class="text-secondary">Web Scraping</h5>
+                            </div>
+                            <div class="card-footer d-flex justify-content-center gap-2">
+                                <img onclick="changeProject('testing-preview', 'viewIconOverlay3', 'assets/img/portfolio/Web Scrapping.png', 'Web Scraping', '#portfolioModal4', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping" class="img-thumbnail selected" style="width: 50px;">
+                                <img onclick="changeProject('testing-preview', 'viewIconOverlay3', 'Playwright.png', 'End-End Testing Using Playwright', '#portfolioModal8', this)" src="Playwright.png" alt="Web Scraping 2" class="img-thumbnail" style="width: 50px;">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Category 2: Data Scientist -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center shadow hover-effect">
-                    <div class="card-header bg-secondary text-white text-uppercase">Data Scientist</div>
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img id="data-scientist-preview" src="assets/img/portfolio/EmoVibe.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
-                        <h5 class="text-secondary">EmoVibe</h5>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center gap-2">
-                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe" class="img-thumbnail selected" style="width: 50px;">
-                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" src="assets/img/portfolio/SentimentalAnalysis.png" alt="Sentimental Analysis" class="img-thumbnail" style="width: 50px;">
-                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart Recognition', '#portfolioModal3', this)" src="assets/img/portfolio/Flowchart.png" alt="Flowchart" class="img-thumbnail" style="width: 50px;">
-                    </div>
-                </div>
-            </div>
-            <!-- Category 3: Testing -->
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 text-center shadow hover-effect">
-                    <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
-                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                        <img id="testing-preview" src="assets/img/portfolio/Web Scrapping.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
-                        <h5 class="text-secondary">Web Scraping</h5>
-                    </div>
-                    <div class="card-footer d-flex justify-content-center gap-2">
-                        <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scraping', '#portfolioModal4', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping" class="img-thumbnail selected" style="width: 50px;">
-                        <img onclick="changeProject('testing-preview', 'Playwright.png', 'End-End Testing Using Playwright', '#portfolioModal8', this)" src="Playwright.png" alt="Web Scraping 2" class="img-thumbnail" style="width: 50px;">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>        
+        </section>
+           
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
@@ -708,10 +730,13 @@
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
         <script>
-            function changeProject(previewId, imageUrl, projectName, portfolioModalId, selectedThumbnail) {
+            function changeProject(previewId, dataBsTargetId, imageUrl, projectName, portfolioModalId, selectedThumbnail) {
                 const previewImg = document.getElementById(previewId);
                 previewImg.src = imageUrl;
-                previewImg.setAttribute('data-bs-target', portfolioModalId);
+
+                const dataBsTarget = document.getElementById(dataBsTargetId);
+                dataBsTarget.setAttribute('data-bs-target', portfolioModalId);
+
                 const cardBody = previewImg.closest('.card-body');
                 cardBody.querySelector('h5').textContent = projectName;
 

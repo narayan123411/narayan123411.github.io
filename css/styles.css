@@ -11147,3 +11147,147 @@ html {
         max-height: 200px;
     }
 }
+
+/* Mobile-specific styles */
+@media (max-width: 767px) {
+    .project-image-container {
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        cursor: pointer;  /* Added pointer cursor */
+        margin-bottom: 1rem;
+    }
+
+    .view-icon-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 2;
+        cursor: pointer;
+    }
+
+    .view-icon-overlay .dark-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        border-radius: 50%;
+    }
+
+    .view-icon-overlay .mobile-view-text {
+        color: white;
+        font-size: 14px;
+        font-weight: bold;
+        z-index: 2;
+        position: absolute;
+        bottom: 10px;
+        text-align: center;
+        width: 100%;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .project-image-container .view-icon-overlay {
+        opacity: 1;
+    }
+}
+
+/* For larger screens, hover effect with opacity change */
+@media (min-width: 768px) {
+    .project-image-container:hover .view-icon-overlay {
+        opacity: 1;
+    }
+}
+
+/* General Image Hover Effect */
+.project-image-container:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-image-container {
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.project-image-container img {
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Hover effect */
+.project-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.view-icon-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.view-icon-overlay .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.view-icon-overlay svg {
+    color: white;
+    z-index: 2;
+}
+
+.view-icon-overlay .mobile-view-text {
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    z-index: 2;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+.project-image-container:hover .view-icon-overlay {
+    opacity: 1;
+}
+
+.project-image-container:hover img {
+    transform: scale(1.05);
+}
+
+.card-footer .img-thumbnail {
+    cursor: pointer;
+}
+
+.card-footer .img-thumbnail.selected {
+    border: 2px solid #4f4bff;
+}
+
