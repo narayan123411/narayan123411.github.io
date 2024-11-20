@@ -707,20 +707,46 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       // JavaScript for project transitions
         <script>
-            function changeProject(previewId, imageUrl, projectName, portfolioModalId, selectedThumbnail) {
-                const previewImg = document.getElementById(previewId);
-                previewImg.src = imageUrl;
-                previewImg.setAttribute('data-bs-target', portfolioModalId);
-                const cardBody = previewImg.closest('.card-body');
-                cardBody.querySelector('h5').textContent = projectName;
+function changeProject(previewId, imageUrl, projectName, selectedThumbnail) {
+    const previewImg = document.getElementById(previewId);
+    previewImg.src = imageUrl;
+    const cardBody = previewImg.closest('.card-body');
+    cardBody.querySelector('h5').textContent = projectName;
 
-                // Highlight the selected thumbnail and remove highlight from others
-                const thumbnails = selectedThumbnail.closest('.card-footer').querySelectorAll('.img-thumbnail');
-                thumbnails.forEach(thumb => thumb.classList.remove('selected'));
-                selectedThumbnail.classList.add('selected');
-            }
-        </script>
+    // Highlight the selected thumbnail and remove highlight from others
+    const thumbnails = selectedThumbnail.closest('.card-footer').querySelectorAll('.img-thumbnail');
+    thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+    selectedThumbnail.classList.add('selected');
+}
+
+// Automatic project transition
+function autoTransition() {
+    const categories = document.querySelectorAll('.portfolio .card');
+    categories.forEach((card) => {
+        const thumbnails = card.querySelectorAll('.card-footer .img-thumbnail');
+        const previewImg = card.querySelector('.project-preview');
+        const title = card.querySelector('.card-body h5');
+
+        let currentIndex = 0;
+
+        setInterval(() => {
+            // Increment index and reset if it exceeds available thumbnails
+            currentIndex = (currentIndex + 1) % thumbnails.length;
+
+            // Trigger the project change
+            const selectedThumbnail = thumbnails[currentIndex];
+            changeProject(previewImg.id, selectedThumbnail.src, selectedThumbnail.alt, selectedThumbnail);
+        }, 5000); // Change projects every 5 seconds
+    });
+}
+      
+// Trigger automatic transitions on page load
+document.addEventListener('DOMContentLoaded', () => {
+    autoTransition();
+});
+  </script>
    <script type='text/javascript'>
     var divElement = document.getElementById('viz1732042955574');
     var vizElement = divElement.getElementsByTagName('object')[0];
