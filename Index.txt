@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Narayan Raval - Portfolio</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">
+                    <img src="assets/img/Logo.png" alt="Brand Image" class="brand-image">
+                </a>                
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#Achievements">Achievements</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead bg-primary text-white text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/Profile.png" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase mb-0">Narayan Raval</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Data Analyst - Data Scientist - NLP Practitioner -  ML DevOps Engineer - Software Testing Engineer </p>
+            </div>
+        </header>
+
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Categories-->
+        <div class="row g-4">
+            <!-- Category 1: Data Analyst -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-analyst-preview" src="assets/img/portfolio/Power BI_1.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <h5 class="text-secondary">Power BI</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI Dashboard', '#portfolioModal1', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'Employee Tracker.png', 'Tableau Dashboard', '#portfolioModal7', this)" src="Employee Tracker.png" alt="Power BI 2" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Category 2: Data Scientist -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Scientist</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-scientist-preview" src="assets/img/portfolio/EmoVibe.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <h5 class="text-secondary">EmoVibe</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" src="assets/img/portfolio/SentimentalAnalysis.png" alt="Sentimental Analysis" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart Recognition', '#portfolioModal3', this)" src="assets/img/portfolio/Flowchart.png" alt="Flowchart" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Category 3: Testing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="testing-preview" src="assets/img/portfolio/Web Scrapping.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <h5 class="text-secondary">Web Scraping</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scraping', '#portfolioModal4', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('testing-preview', 'Playwright.png', 'End-End Testing Using Playwright', '#portfolioModal8', this)" src="Playwright.png" alt="Web Scraping 2" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About Me</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <p class="lead">Welcome to my portfolio! <br><br> I am Narayan, a Data Science enthusiast currently pursuing my Master’s in Data Science. With over 4 years as a Data Analyst, a year as a Research Assistant, and a summer intern at YouROk, I bring a wealth of experience in the domain of Data.</p>
+                        <p class="lead">I have previously worked with Accenture as a Data Analyst and contributed to research at the University of North Texas. </p>
+                        <p class="lead">I am honored to receive the <span class="fw-bold text-dark">Excellent Intern Scholarship</span> for my outstanding performance. I'm passionate about transforming data into actionable insights and building robust machine learning solutions.</p>
+                    </div>
+                    <div class="col-lg-6">
+                        <h3 class="text-center">Work Experience</h3>
+                        <div class="row">
+                            <div class="col-md-4 text-center">
+                                <a href="https://www.accenture.com/us-en?c=acn_glb_sembrandpuregoogle_13513493&n=psgs_0323&&c=ad_usadfy17_10000001&n=psgs_Brand-%7C-US-%7C-Exact_accenture&gad_source=1&gclid=CjwKCAjw_ZC2BhAQEiwAXSgClsbybFk-muZJFdwhToSeKo-Z7FnRXnHCbmy8FNS00o0tTh5z0LeUZRoCouMQAvD_BwE&gclsrc=aw.ds" target="_blank">
+                                    <img src="assets\img\portfolio\Accenture-Logo-PNG-Pic.png" alt="Accenture Logo" class="img-fluid mb-3" style="max-width: 100%;">
+                                </a>
+                                <p>Accenture</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="https://www.unt.edu/index.html" target="_blank">
+                                    <img src="assets\img\portfolio\university-of-north-texas-logo-477F29AACD-seeklogo.com.png" alt="University of North Texas Logo" class="img-fluid mb-3" style="max-width: 100px;">
+                                </a>
+                                <p>University of North Texas</p>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <a href="https://www.yourokapps.com/" target="_blank">
+                                    <img src="assets\img\portfolio\1631338127009.jpg" alt="YouROk Logo" class="img-fluid mb-3" style="max-width: 100px;">
+                                </a>
+                                <p>YouROk</p>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <h3 class="text-center">Skills</h3>
+                        <div class="row">
+                            <div class="col-md-4 text-center" >
+                                <ul class="list-unstyled">
+                                    <li>Python</li>
+                                    <li>SQL</li>
+                                    <li>GPT Prompting</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <ul class="list-unstyled">
+                                    <li>ML DevOps Engineering</li>
+                                    <li>Docker</li>
+                                    <li>NLP</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 text-center">
+                                <ul class="list-unstyled">
+                                    <li>Text Mining</li>
+                                    <li>GitHub</li>
+                                    <li>Linux</li>
+                                    <li>Flask</li>
+                                </ul>
+                            </div>
+                        </div>
+    
+                    </div>
+                    
+                                                    
+                        
+                    
+                </div>
+            </div>
+        <!-- About Section Buttons-->
+        <div class="text-center mt-4 d-flex justify-content-center">
+            <a class="btn btn-xl btn-outline-light mx-3" href="https://drive.google.com/file/d/1RuNlIY6EQelQEH6Dz3OzMrBXjxytMupH/view" target="_blank">
+                <i class="fas fa-download me-2"></i>
+                <div>Resume</div>
+            </a>
+            <a class="btn btn-xl btn-outline-light mx-3" href="mailto:narayandharmendraraval@my.unt.edu">
+                <i class="fas fa-envelope me-2"></i>
+                <div>Hire Me</div>
+            </a>
+        </div>      
+        </section>
+        <!-- Certifications & Achievements Section -->
+        <section class="page-section" id="Achievements">
+            <div class="container">
+                <!-- Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Certifications & Achievements</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Section Content -->
+                <div class="row">
+                    <!-- Certification 1 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificateModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-rect" src="eCertificate-1.png" alt="Certification 1" />
+                            <div class="text-center mt-2">
+                                <h5>Certificate 1: Oracle Certified Foundations Associates</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Certification 2 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#certificateModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-rect" src="DataCamp1-1.png" alt="Certification 2" />
+                            <div class="text-center mt-2">
+                                <br>
+                                <h5>Certificate 2: Programming In Python</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Achievement 1 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#achievementModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-rect" src="1807598.png" alt="Achievement 1" />
+                            <div class="text-center mt-2">
+                                <h5>Achievement 1: Received Scholarship for Excellence</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Achievement 2 -->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#achievementModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-rect" src="Narayan Raval.png" alt="Achievement 2" />
+                            <div class="text-center mt-2">
+                                <h5>Achievement 2: FPGA AI Competition Regional Finalist</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modals for Certificates -->
+        <!-- Certificate Modal 1 -->
+        <div class="portfolio-modal modal fade" id="certificateModal1" tabindex="-1" aria-labelledby="certificateModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModal1Label">Oracle Certified Foundations Associates</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-rect d-block mx-auto" src="eCertificate-1.png" alt="Certification 1" />
+                        <p class="mt-3"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Certificate Modal 2 -->
+        <div class="portfolio-modal modal fade" id="certificateModal2" tabindex="-1" aria-labelledby="certificateModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="certificateModal2Label">Programming In Python</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-rect d-block mx-auto" src="DataCamp1-1.png" alt="Certification 2" />
+                        <p class="mt-3"></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Modals for Achievements -->
+        <!-- Achievement Modal 1 -->
+        <div class="portfolio-modal modal fade" id="achievementModal1" tabindex="-1" aria-labelledby="achievementModal1Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="achievementModal1Label">Received Scholarship for Excellence</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-rect d-block mx-auto" src="1807598.png" alt="Achievement 1" />
+                        <p class="mt-3">Received a scholarship as financial aid for working excellently as an intern.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Achievement Modal 2 -->
+        <div class="portfolio-modal modal fade" id="achievementModal2" tabindex="-1" aria-labelledby="achievementModal2Label" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="achievementModal2Label">FPGA AI Competition Regional Finalist</h5>
+                        <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body text-center">
+                        <img class="img-rect d-block mx-auto" src="Narayan Raval.png" alt="Achievement 2" />
+                        <p class="mt-3">Participated in the FPGA AI competition and became a regional finalist. Received a certificate and a stipend for this achievement.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn btn-secondary" type="button" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>                
+        <!-- Contact Section -->
+        <section class="page-section bg-primary text-white mb-0" id="contact">
+            <div class="container">
+                <!-- Contact Section Heading -->
+                <h2 class="page-section-heading text-center text-uppercase text-white">Contact Me</h2>
+                <!-- Icon Divider -->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Contact Information -->
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7 text-center">
+                        <p class="lead" style="font-size: 1.25rem;">Feel free to reach out to me through the following contact details:</p>
+                        <p style="font-size: 1.5rem;">
+                            <a href="mailto:narayandharmendraraval@my.unt.edu" class="text-white mx-3"><i class="fas fa-envelope fa-2x"></i></a>
+                            <a href="https://github.com/narayan123411" class="text-white mx-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                            <a href="https://www.linkedin.com/in/narayan12341" class="text-white mx-3" target="_blank"><i class="fab fa-linkedin fa-2x"></i></a>
+                            <a href="https://medium.com/@narayan.raval.12/understanding-machine-learning-model-checkpoints-with-a-hands-on-example-9d40168de3ba" class="text-white mx-3" target="_blank"><i class="fab fa-medium fa-2x"></i></a>
+                        </p>
+                    </div>
+                </div>
+
+                <!-- References Section -->
+                <div class="row justify-content-center mt-5">
+                    <div class="col-lg-8 col-xl-7 text-center">
+                        <h4 class="text-uppercase text-white">References</h4>
+                        <p style="font-size: 1.25rem;">
+                            Patrina Mack, CEO at YOUROK
+                            <a href="mailto:patrina@yourokapps.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+                        </p>
+                        <p style="font-size: 1.25rem;">
+                            Ji Hyun Yu, Research Professor at UNT
+                            <a href="mailto:jihyun.yu@unt.edu" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+                        </p>
+                        <p style="font-size: 1.25rem;">
+                            Niraj Bais, Manager at Accenture
+                            <a href="mailto:niraj.bais@accenture.com" class="text-white"><i class="fas fa-envelope fa-lg"></i></a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            <i class="fas fa-map-marker-alt"></i> Dallas, Texas
+                            <br />
+                            <span>(Willing to Relocate for the right opportunity)</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Copyright Section-->
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Power BI Data Visualization</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Power BI Report -->
+                                    <iframe title="FinalYearVisualization 1" class="responsive-iframe" src="https://app.powerbi.com/view?r=eyJrIjoiNzM2MmNhODgtMmNiNS00OTVkLWI2ZDYtZWJhM2U3YTRlYzM1IiwidCI6IjcwZGUxOTkyLTA3YzYtNDgwZi1hMzE4LWExYWZjYmEwMzk4MyIsImMiOjN9&pageName=ReportSection95907bec414a23535016" frameborder="0" allowFullScreen="true"></iframe>
+
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-justify">In this project, I preprocessed the Covid-19 data, including datatype changes, and used the group by function to create targeted visualizations like county-specific and yearly graphs. I incorporated legends and other techniques to enhance the detail of these graphs. You can hover over the graphs for more insights into the data.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal Tableau-->
+       <!-- Portfolio Modal Tableau -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employee Tracker Dashboard</h2>
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Tableau Embed Container -->
+                            <div class='tableauPlaceholder' id='viz1732042955574' style='position: relative;'>
+                                <noscript>
+                                    <a href='#'>
+                                        <img alt='Employee Tracker' src='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1_rss.png' style='border: none' />
+                                    </a>
+                                </noscript>
+                                <object class='tableauViz' style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='EmployeeTrackerDashboard/EmployeeTracker' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image' value='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='language' value='en-US' />
+                                </object>
+                            </div>
+                            <p class="mb-4 text-justify">
+                                This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i> Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Flowchart Recognition</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" src="assets\img\Screenshot 2024-08-14 211901.png" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-justify">This project implements a pipeline for recognizing handwritten and computer-generated flowcharts using image preprocessing and shape-connector detection. It employs the Faster R-CNN model with a VGG-16 backbone, fine-tuned through hyperparameter adjustments. The dataset, originally focused on handwritten samples, was expanded with a computer-based dataset, enhancing the model's performance.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Automated Image Retrieval from Google Patents</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <iframe src="https://github.com/narayan123411/WebScrapping-/assets/53684708/21561ddf-7110-4974-979d-22d4e446b11c" class="responsive-iframe" frameborder="0" allowfullscreen="true"></iframe>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-justify">This project involved downloading over 16,000 Google images from Google Patents, organizing them into folders named after each patent. I utilized Selenium in Python for automation, and to enhance efficiency, I implemented non-GUI multi-threading to significantly speed up the process.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+ <!-- Portfolio Modal 4-->
+           <!-- Portfolio Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EmoVIbe: Personalized Emotion-Driven Music Recommendations</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - GIF -->
+                            <img src="GIT_Sentimental_Analysis.gif" class="img-fluid rounded mb-5" alt="Playwright Automation GIF">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4 text-justify">Combined CNN with LSTM for emotion extraction and K-means clustering for music categorization, recommending music based on user emotions.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!-- Portfolio Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">End-To-End Testing Using Playwright Framework</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - GIF -->
+                            <img src="Playwright_AutomationA.gif" class="img-fluid rounded mb-5" alt="Playwright Automation GIF">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4 text-justify">I utilized the Live Server plugin from Visual Studio Code for real-time reporting and built a testUtil.js file for creating global functions accessible across all test cases.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content">
+                <div class="modal-header border-0">
+                  <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pb-5">
+                  <div class="container">
+                    <div class="row justify-content-center">
+                      <div class="col-lg-12"> <!-- Use full width column -->
+                        <!-- Portfolio Modal - Title-->
+                        <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Animated Map of COVID-19 Spread</h2>
+                        <!-- Icon Divider-->
+                        <div class="divider-custom">
+                          <div class="divider-custom-line"></div>
+                          <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                          <div class="divider-custom-line"></div>
+                        </div>
+                        <!-- Portfolio Modal - Image-->
+                        <!-- <iframe src="interactive_dashboard.html" frameborder="0" allowfullscreen="true"></iframe> -->
+                        <!-- Portfolio Modal - Text-->
+                        <p class="mb-4 text-justify">This project presents an <a href="interactive_dashboard.html" target="_blank">Animated Choropleth Map</a> illustrating the global spread of COVID-19 (Confirmed Cases). By processing monthly data, the animation tracks and visualizes the progression of cases across different countries, highlighting trends and patterns in the pandemic's evolution.</p>
+                        <button class="btn btn-primary" data-bs-dismiss="modal">
+                          <i class="fas fa-xmark fa-fw"></i>
+                          Close Window
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>          
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Spanish Sentiment Analysis with BERT</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <video class="img-fluid rounded mb-5" src="Blue Illustrative The Importance of English Language Presentation.mp4" autoplay loop muted playsinline>
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4 text-justify">This project employs a BERT-based model to perform sentiment analysis on Spanish conversations. The model extracts key expressions and provides a score from 0 to 100, reflecting the overall sentiment and well-being of the individual based on their input.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+        <script>
+            function changeProject(previewId, imageUrl, projectName, portfolioModalId, selectedThumbnail) {
+                const previewImg = document.getElementById(previewId);
+                previewImg.src = imageUrl;
+                previewImg.setAttribute('data-bs-target', portfolioModalId);
+                const cardBody = previewImg.closest('.card-body');
+                cardBody.querySelector('h5').textContent = projectName;
+
+                // Highlight the selected thumbnail and remove highlight from others
+                const thumbnails = selectedThumbnail.closest('.card-footer').querySelectorAll('.img-thumbnail');
+                thumbnails.forEach(thumb => thumb.classList.remove('selected'));
+                selectedThumbnail.classList.add('selected');
+            }
+        </script>
+   <script type='text/javascript'>
+    var divElement = document.getElementById('viz1732042955574');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1200px';
+        vizElement.style.height = '827px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '827px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '2177px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
+    </body>
+</html>
