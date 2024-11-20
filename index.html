@@ -55,104 +55,66 @@
             </div>
         </header>
 
-        <!-- Portfolio Section-->
-        <section class="page-section portfolio" id="portfolio">
-            <div class="container">
-                <!-- Portfolio Section Heading-->
-                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
-                <!-- Icon Divider-->
-                <div class="divider-custom">
-                    <div class="divider-custom-line"></div>
-                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                    <div class="divider-custom-line"></div>
-                </div>
-                <!-- Portfolio Categories-->
-                <div class="row g-4">
-                    <!-- Category 1: Data Analyst -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="data-analyst-preview" 
-                                    src="assets/img/portfolio/Power BI_1.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal1"
-                                >
-                                <h5 class="text-secondary">Power BI</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI', '#portfolioModal1', this)" 
-                                    src="assets/img/portfolio/Power BI_1.png" 
-                                    alt="Power BI" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart', '#portfolioModal3', this)" 
-                                    src="assets/img/portfolio/Flowchart.png" 
-                                    alt="Flowchart" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
+<!-- Portfolio Section-->
+<section class="page-section portfolio" id="portfolio">
+    <div class="container">
+        <!-- Portfolio Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        <!-- Portfolio Categories-->
+        <div class="row g-4">
+            <!-- Category 1: Data Analyst -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Analyst</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-analyst-preview" src="assets/img/portfolio/Power BI_1.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                        <h5 class="text-secondary">Power BI</h5>
                     </div>
-                    <!-- Category 2: Data Scientists -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Data Scientists</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="data-scientist-preview" 
-                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal6"
-                                >
-                                <h5 class="text-secondary">Sentimental Analysis</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" 
-                                    src="assets/img/portfolio/SentimentalAnalysis.png" 
-                                    alt="Sentimental Analysis" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" 
-                                    src="assets/img/portfolio/Covid Spread.png" 
-                                    alt="Covid Spread" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Category 3: Testing -->
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 text-center shadow">
-                            <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
-                            <div class="card-body d-flex flex-column justify-content-center align-items-center">
-                                <img id="testing-preview" 
-                                    src="assets/img/portfolio/Web Scrapping.png" 
-                                    alt="Project Preview" 
-                                    class="img-fluid mb-3 cursor-pointer" 
-                                    style="max-height: 200px; width: auto;"
-                                    data-bs-toggle="modal"
-                                    data-bs-target="#portfolioModal4"
-                                >
-                                <h5 class="text-secondary">Web Scrapping</h5>
-                            </div>
-                            <div class="card-footer d-flex justify-content-center gap-2">
-                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scrapping', '#portfolioModal4', this)" 
-                                    src="assets/img/portfolio/Web Scrapping.png" 
-                                    alt="Web Scrapping" 
-                                    class="img-thumbnail selected" style="width: 50px;">
-                                <img onclick="changeProject('testing-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" 
-                                    src="assets/img/portfolio/EmoVibe.png" 
-                                    alt="EmoVibe" 
-                                    class="img-thumbnail" style="width: 50px;">
-                            </div>
-                        </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Power BI_1.png', 'Power BI Dashboard', '#portfolioModal1', this)" src="assets/img/portfolio/Power BI_1.png" alt="Power BI" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'Employee Tracker.png', 'Tableau Dashboard', '#portfolioModal7', this)" src="Employee Tracker.png" alt="Power BI 2" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-analyst-preview', 'assets/img/portfolio/Covid Spread.png', 'Covid Spread', '#portfolioModal5', this)" src="assets/img/portfolio/Covid Spread.png" alt="Covid Spread" class="img-thumbnail" style="width: 50px;">
                     </div>
                 </div>
             </div>
-        </section>
-        
+            <!-- Category 2: Data Scientist -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Data Scientist</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="data-scientist-preview" src="assets/img/portfolio/EmoVibe.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                        <h5 class="text-secondary">EmoVibe</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/EmoVibe.png', 'EmoVibe', '#portfolioModal2', this)" src="assets/img/portfolio/EmoVibe.png" alt="EmoVibe" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/SentimentalAnalysis.png', 'Sentimental Analysis', '#portfolioModal6', this)" src="assets/img/portfolio/SentimentalAnalysis.png" alt="Sentimental Analysis" class="img-thumbnail" style="width: 50px;">
+                        <img onclick="changeProject('data-scientist-preview', 'assets/img/portfolio/Flowchart.png', 'Flowchart Recognition', '#portfolioModal3', this)" src="assets/img/portfolio/Flowchart.png" alt="Flowchart" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+            <!-- Category 3: Testing -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 text-center shadow hover-effect">
+                    <div class="card-header bg-secondary text-white text-uppercase">Testing</div>
+                    <div class="card-body d-flex flex-column justify-content-center align-items-center">
+                        <img id="testing-preview" src="assets/img/portfolio/Web Scrapping.png" alt="Project Preview" class="img-fluid mb-3 cursor-pointer" style="max-height: 200px; width: auto;" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                        <h5 class="text-secondary">Web Scraping</h5>
+                    </div>
+                    <div class="card-footer d-flex justify-content-center gap-2">
+                        <img onclick="changeProject('testing-preview', 'assets/img/portfolio/Web Scrapping.png', 'Web Scraping', '#portfolioModal4', this)" src="assets/img/portfolio/Web Scrapping.png" alt="Web Scraping" class="img-thumbnail selected" style="width: 50px;">
+                        <img onclick="changeProject('testing-preview', 'Playwright.png', 'End-End Testing Using Playwright', '#portfolioModal8', this)" src="Playwright.png" alt="Web Scraping 2" class="img-thumbnail" style="width: 50px;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>        
         <!-- About Section-->
         <section class="page-section bg-primary text-white mb-0" id="about">
             <div class="container">
@@ -480,39 +442,61 @@
                 </div>
             </div>
         </div>
-        <!-- Portfolio Modal 2-->
-        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
-            <div class="modal-dialog modal-xl">
-                <div class="modal-content">
-                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
-                    <div class="modal-body text-center pb-5">
-                        <div class="container">
-                            <div class="row justify-content-center">
-                                <div class="col-lg-8">
-                                    <!-- Portfolio Modal - Title-->
-                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EMO VIBE</h2>
-                                    <!-- Icon Divider-->
-                                    <div class="divider-custom">
-                                        <div class="divider-custom-line"></div>
-                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
-                                        <div class="divider-custom-line"></div>
-                                    </div>
-                                    <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="assets\img\288330234-1d3754e9-a171-4921-8458-f7f7b1880828.png" alt="..." />
-                                    <!-- Portfolio Modal - Text-->
-                                    <p class="mb-4 text-justify">
-                                        This project leverages an advanced Convolutional Neural Network, specifically the ResNet model, to analyze facial expressions and predict emotions with 95% accuracy. Based on the detected emotion, the system suggests music tracks that match the user's mood, updating recommendations each time while also considering the user's previous choices.</p>
-                                    <button class="btn btn-primary" data-bs-dismiss="modal">
-                                        <i class="fas fa-xmark fa-fw"></i>
-                                        Close Window
-                                    </button>
-                                </div>
+        <!-- Portfolio Modal Tableau-->
+       <!-- Portfolio Modal Tableau -->
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Employee Tracker Dashboard</h2>
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
                             </div>
+                            <!-- Tableau Embed Container -->
+                            <div class='tableauPlaceholder' id='viz1732042955574' style='position: relative;'>
+                                <noscript>
+                                    <a href='#'>
+                                        <img alt='Employee Tracker' src='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1_rss.png' style='border: none' />
+                                    </a>
+                                </noscript>
+                                <object class='tableauViz' style='display:none;'>
+                                    <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                                    <param name='embed_code_version' value='3' />
+                                    <param name='site_root' value='' />
+                                    <param name='name' value='EmployeeTrackerDashboard/EmployeeTracker' />
+                                    <param name='tabs' value='no' />
+                                    <param name='toolbar' value='yes' />
+                                    <param name='static_image' value='https://public.tableau.com/static/images/Em/EmployeeTrackerDashboard/EmployeeTracker/1.png' />
+                                    <param name='animate_transition' value='yes' />
+                                    <param name='display_static_image' value='yes' />
+                                    <param name='display_spinner' value='yes' />
+                                    <param name='display_overlay' value='yes' />
+                                    <param name='display_count' value='yes' />
+                                    <param name='language' value='en-US' />
+                                </object>
+                            </div>
+                            <p class="mb-4 text-justify">
+                                This dashboard tracks employee leaves, open tickets, and the average time to resolve tickets. It also shows the percentage difference in ticket completion between months.
+                            </p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i> Close Window
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+
         <!-- Portfolio Modal 3-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -577,6 +561,76 @@
                 </div>
             </div>
         </div>
+ <!-- Portfolio Modal 4-->
+           <!-- Portfolio Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">EmoVIbe: Personalized Emotion-Driven Music Recommendations</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - GIF -->
+                            <img src="GIT_Sentimental_Analysis.gif" class="img-fluid rounded mb-5" alt="Playwright Automation GIF">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4 text-justify">Combined CNN with LSTM for emotion extraction and K-means clustering for music categorization, recommending music based on user emotions.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+     <!-- Portfolio Modal -->
+<div class="portfolio-modal modal fade" id="portfolioModal8" tabindex="-1" aria-labelledby="portfolioModal8" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title -->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">End-To-End Testing Using Playwright Framework</h2>
+                            <!-- Icon Divider -->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - GIF -->
+                            <img src="Playwright_AutomationA.gif" class="img-fluid rounded mb-5" alt="Playwright Automation GIF">
+                            <!-- Portfolio Modal - Text -->
+                            <p class="mb-4 text-justify">I utilized the Live Server plugin from Visual Studio Code for real-time reporting and built a testUtil.js file for creating global functions accessible across all test cases.</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
         <!-- Portfolio Modal 5-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
             <div class="modal-dialog modal-xl">
@@ -667,5 +721,23 @@
                 selectedThumbnail.classList.add('selected');
             }
         </script>
+   <script type='text/javascript'>
+    var divElement = document.getElementById('viz1732042955574');
+    var vizElement = divElement.getElementsByTagName('object')[0];
+    if (divElement.offsetWidth > 800) {
+        vizElement.style.width = '1200px';
+        vizElement.style.height = '827px';
+    } else if (divElement.offsetWidth > 500) {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '827px';
+    } else {
+        vizElement.style.width = '100%';
+        vizElement.style.height = '2177px';
+    }
+    var scriptElement = document.createElement('script');
+    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+</script>
+
     </body>
 </html>
