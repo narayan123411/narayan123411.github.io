@@ -11106,3 +11106,44 @@ html {
     background-color: #e6f2ff; /* Light blue color */
     transition: background-color 0.3s ease;
 }
+/* Increase card size for better visibility */
+.card {
+    height: 100%; /* Ensure full height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img.project-preview {
+    max-height: 250px;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Highlight animation */
+.card:hover img.project-preview {
+    transform: scale(1.1); /* Slight zoom-in effect */
+}
+
+.card-footer img.selected {
+    border: 2px solid #28a745; /* Highlight selected thumbnail */
+    box-shadow: 0px 0px 5px rgba(40, 167, 69, 0.8);
+    animation: highlight 0.6s infinite alternate; /* Add subtle animation */
+}
+
+@keyframes highlight {
+    0% {
+        box-shadow: 0px 0px 5px rgba(40, 167, 69, 0.8);
+    }
+    100% {
+        box-shadow: 0px 0px 15px rgba(40, 167, 69, 1);
+    }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+
+    .card img.project-preview {
+        max-height: 200px;
+    }
+}
